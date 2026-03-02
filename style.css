@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: cyan;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+a {
+    background: cyan;
+    padding: 10px 20px;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
