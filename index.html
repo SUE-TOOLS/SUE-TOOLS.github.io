@@ -1,226 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUE TOOLS</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins', sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-color:white;
-}
-
-/* NAVBAR */
-nav{
-position:fixed;
-width:100%;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,0.4);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-nav h2{
-font-weight:700;
-}
-
-nav ul{
-list-style:none;
-display:flex;
-gap:30px;
-}
-
-nav ul li{
-cursor:pointer;
-transition:0.3s;
-}
-
-nav ul li:hover{
-color:#00e0ff;
-}
-
-/* HERO */
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:20px;
-opacity:0.8;
-margin-bottom:30px;
-}
-
-.hero button{
-padding:15px 40px;
-border:none;
-border-radius:30px;
-background:#00e0ff;
-color:black;
-font-weight:600;
-cursor:pointer;
-transition:0.3s;
-}
-
-.hero button:hover{
-transform:scale(1.1);
-}
-
-/* SECTION */
-.section{
-padding:100px 60px;
-text-align:center;
-}
-
-.cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-margin-top:50px;
-}
-
-.card{
-background:rgba(255,255,255,0.1);
-backdrop-filter:blur(15px);
-padding:30px;
-width:300px;
-border-radius:20px;
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-15px);
-background:rgba(255,255,255,0.2);
-}
-
-.card h3{
-margin-bottom:15px;
-}
-
-.stats{
-display:flex;
-justify-content:center;
-gap:60px;
-margin-top:40px;
-flex-wrap:wrap;
-}
-
-.stat h2{
-font-size:45px;
-color:#00e0ff;
-}
-
-/* FOOTER */
-footer{
-padding:40px;
-text-align:center;
-background:rgba(0,0,0,0.5);
-margin-top:80px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-.hero h1{
-font-size:35px;
-}
-.cards{
-flex-direction:column;
-align-items:center;
-}
-}
-</style>
+    <title>SUE Tools</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<h1>SUE Engineering Tools</h1>
+<p>Buy your tools at wholesale prices</p>
+
 <nav>
-<h2>SUE TOOLS</h2>
-<ul>
-<li>Home</li>
-<li>Services</li>
-<li>About</li>
-<li>Contact</li>
-</ul>
+    <a href="index.html">Home</a> |
+    <a href="shop.html">Shop</a> |
+    <a href="used.html">Used Tools</a> |
+    <a href="cart.html">Cart</a>
 </nav>
 
-<div class="hero">
-<h1>Your Future Is Here</h1>
-<p>Advanced Engineering Platform for SUE Students</p>
-<button>Get Started</button>
-</div>
+<br><br>
 
-<div class="section">
-<h2>Our Services</h2>
-
-<div class="cards">
-<div class="card">
-<h3>Engineering Tools</h3>
-<p>Access powerful academic and practical tools.</p>
-</div>
-
-<div class="card">
-<h3>Study Materials</h3>
-<p>Organized lectures, sheets and references.</p>
-</div>
-
-<div class="card">
-<h3>Projects Hub</h3>
-<p>Graduation and mini project resources.</p>
-</div>
-</div>
-
-</div>
-
-<div class="section">
-<h2>Platform Statistics</h2>
-
-<div class="stats">
-<div class="stat">
-<h2>+500</h2>
-<p>Students</p>
-</div>
-
-<div class="stat">
-<h2>+120</h2>
-<p>Resources</p>
-</div>
-
-<div class="stat">
-<h2>+30</h2>
-<p>Projects</p>
-</div>
-</div>
-
-</div>
-
-<footer>
-© 2026 SUE TOOLS | All Rights Reserved
-</footer>
+<a href="shop.html">Start Shopping</a>
 
 </body>
 </html>
