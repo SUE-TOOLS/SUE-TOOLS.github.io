@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop - SUE Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function addToCart(name, price) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push({name: name, price: price});
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert("Added to cart!");
+        }
+    </script>
+</head>
+<body>
+
+<h1>New Tools</h1>
+
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="shop.html">Shop</a> |
+    <a href="used.html">Used Tools</a> |
+    <a href="cart.html">Cart</a>
+</nav>
+
+<br><br>
+
+<div>
+    <h3>T Ruler</h3>
+    <p>350 EGP</p>
+    <button onclick="addToCart('T Ruler',350)">Add to Cart</button>
+</div>
+
+<br>
+
+<div>
+    <h3>Triangle</h3>
+    <p>120 EGP</p>
+    <button onclick="addToCart('Triangle',120)">Add to Cart</button>
+</div>
+
+<br><br>
+
+<a href="cart.html">Go To Cart</a>
+
+</body>
+</html>
