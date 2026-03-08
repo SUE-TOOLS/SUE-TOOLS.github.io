@@ -20,7 +20,7 @@
     <a href="index.html">Home</a> |
     <a href="shop.html">Shop</a> |
     <a href="used.html">Used Tools</a> |
-    <a href="cart.html">Cart</a>
+    <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
 </nav>
 
 <br><br>
@@ -80,6 +80,13 @@
 <br><br>
 
 <a href="cart.html">Go To Cart</a>
+<script>
+function updateCartCount(){
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+document.getElementById("cart-count").innerText = cart.length;
+}
 
+updateCartCount();
+</script>
 </body>
 </html>
