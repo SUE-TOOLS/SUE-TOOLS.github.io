@@ -21,6 +21,40 @@
 <br><br>
 
 <a href="shop.html">Start Shopping</a>
+<div style="position:fixed;bottom:20px;right:20px;background:white;padding:10px;border-radius:10px">
 
+<input id="userInput" placeholder="Ask about tools...">
+
+<button onclick="askAI()">Ask</button>
+
+<p id="aiResponse"></p>
+
+</div>
+
+<script>
+
+function askAI(){
+
+let question = document.getElementById("userInput").value.toLowerCase()
+
+let answer=""
+
+if(question.includes("ruler"))
+answer="The ruler is used for straight lines."
+
+else if(question.includes("triangle"))
+answer="Triangles are used for drawing angles 45° or 30°-60°."
+
+else if(question.includes("rotring"))
+answer="Rotring pens are used for precise engineering drawing."
+
+else
+answer="This tool is available in the store."
+
+document.getElementById("aiResponse").innerText=answer
+
+}
+
+</script>
 </body>
 </html>
