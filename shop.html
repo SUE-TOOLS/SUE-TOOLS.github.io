@@ -15,7 +15,9 @@
 <body>
 
 <h1>New Tools</h1>
-
+<br>
+<input type="text" id="search" placeholder="Search for tools..." onkeyup="searchProducts()" style="padding:10px;width:200px;">
+<br><br>
 <nav>
     <a href="index.html">Home</a> |
     <a href="shop.html">Shop</a> |
@@ -87,6 +89,25 @@ document.getElementById("cart-count").innerText = cart.length;
 }
 
 updateCartCount();
+</script>
+    [3/8/2026 4:45 PM] Yousef Amr: <br>
+<input type="text" id="search" placeholder="Search for tools..." onkeyup="searchProducts()" style="padding:10px;width:200px;">
+<br><br>
+[3/8/2026 4:46 PM] Yousef Amr: <script>
+function searchProducts(){
+let input = document.getElementById("search").value.toLowerCase();
+let products = document.getElementsByClassName("product");
+
+for(let i=0;i<products.length;i++){
+let text = products[i].innerText.toLowerCase();
+
+if(text.includes(input)){
+products[i].style.display="block";
+}else{
+products[i].style.display="none";
+}
+}
+}
 </script>
 </body>
 </html>
