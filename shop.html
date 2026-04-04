@@ -87,6 +87,8 @@
 
     <div class="product">
         <h3>Compass</h3>
+     <img src="https://SUE-TOOLS.github.io/Compass.jpg"
+       style="width:150px; display:block; margin:0 auto;">
         <p>15 EGP</p>
         <button onclick="addToCart('Compass',15)">Add to Cart</button>
     </div>
@@ -106,11 +108,7 @@ updateCartCount();
 </script>
 <input type="text" id="search" placeholder="Search for tools..." onkeyup="searchProducts()" style="padding:10px;width:200px;">
 <br><br>
-function searchProducts(){
-let input = document.getElementById("search").value.toLowerCase();
-let products = document.getElementsByClassName("product");
-
-for(let i=0;i<products.length;i++){
+<products.length;i++){
 let text = products[i].innerText.toLowerCase();
 
 if(text.includes(input)){
